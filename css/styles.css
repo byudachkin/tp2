@@ -140,5 +140,6 @@ main h1{
 
 .boton{
     display: flex;
-    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
 }
