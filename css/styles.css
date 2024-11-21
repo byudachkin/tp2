@@ -1,3 +1,179 @@
+
+/* header*/
+
 .errordescript{
     display: none;
+}
+
+header{
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(240, 234, 234);
+    box-shadow: 0px 4px 8px rgb(122, 120, 120);
+    font-family: "Geist Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+}
+
+
+.img-container {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    padding-left: 50px;
+    margin-left: 26%;
+}
+
+
+.img-container img {
+    width: 35%;
+    height: 40%; 
+    border-radius: 50%;
+    padding-top: 10px;
+}
+
+.campoBuscar {
+    padding: 5px;
+    font-size: 16px;
+    display: flex;
+    align-content: space-between;
+    justify-content: center;
+}
+
+.form{
+    display: flex;
+    align-content: space-between;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+
+nav ul {
+    list-style: none;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px;
+    background-color: rgb(235, 223, 223);
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* footer*/
+
+footer{
+    font-family: "Geist Mono", monospace;
+    font-optical-sizing: auto;
+    font-family: "Geist Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: rgb(240, 234, 234);
+    padding: 30px;
+}
+
+footer div{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* index.html, home*/
+
+main h1{
+    font-family: "Geist Mono", monospace;
+    font-optical-sizing: auto;
+    font-family: "Geist Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-align: center;
+    padding-top: 30px;
+}
+
+
+.productGrid{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.productGrid article{
+    width: 40%;
+    border: 1px solid gray;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Geist Mono", monospace;
+    font-optical-sizing: auto;
+    font-family: "Geist Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    
+}
+
+.productGrid article img{
+    width: 60%;
+    padding-top: 20px;
+}
+
+.productGrid p {
+    text-align: center;
+}
+
+.productGrid article a{
+    color: black;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(240, 234, 234);
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    margin-top: 13px;
+}
+
+/*login html, register html*/
+
+.ingresar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ingresar form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.ingresar input, .ingresar button{
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.ingresar button{
+    background-color: rgb(240, 234, 234);
+    color: black;
+    text-transform: uppercase;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    margin-bottom: 30px;
 }
