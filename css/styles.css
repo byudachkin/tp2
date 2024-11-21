@@ -82,7 +82,7 @@ footer div{
     justify-content: space-evenly;
 }
 
-/* index.html*/
+/* index.html, home*/
 
 main h1{
     font-family: "Geist Mono", monospace;
@@ -95,7 +95,7 @@ main h1{
 }
 
 
-.product-grid{
+.productGrid{
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -103,7 +103,7 @@ main h1{
     padding-bottom: 20px;
 }
 
-.product-grid article{
+.productGrid article{
     width: 40%;
     border: 1px solid gray;
     margin-top: 10px;
@@ -118,16 +118,16 @@ main h1{
     
 }
 
-.product-grid article img{
+.productGrid article img{
     width: 60%;
     padding-top: 20px;
 }
 
-.product-grid p {
+.productGrid p {
     text-align: center;
 }
 
-.product-grid article a{
+.productGrid article a{
     color: black;
     text-decoration: none;
     padding-top: 10px;
@@ -145,6 +145,7 @@ main h1{
     margin-top: 13px;
 }
 
+/*login html, register html*/
 
 .ingresar{
     display: flex;
