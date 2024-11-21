@@ -32,7 +32,7 @@ fetch('https://dummyjson.com/recipes')
 })
 .then(function(data){
     console.log(data.results)
-    
+
     for ( let i = 0; i < 10; i++){
         const receta = data.results[i]
         const markUp = 
