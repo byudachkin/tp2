@@ -31,21 +31,18 @@ fetch('https://dummyjson.com/recipes')
     return response.json();
 })
 .then(function(data){
-    console.log(data.results)
-
     for ( let i = 0; i < 10; i++){
-        const receta = data.results[i]
+        const receta = data.recipes[i]
         const markUp = 
        ` <article>
              <img src="${receta.image}" alt="${receta.name}">
              <h2>${receta.name}</h2>
              <p>DIFICULTAD: ${receta.difficulty}</p>
-             <a href="#">MAS DETALLES</a>
+             <a href="receta.html">MAS DETALLES</a>
         </article>`;
         recetas += markUp
     }
     productGrid.innerHTML = recetas
-
 })
 
 .catch(function(error){
