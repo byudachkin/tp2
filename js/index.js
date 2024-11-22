@@ -20,6 +20,8 @@ formulario.addEventListener("submit", function (event) {
     }
 });
 
+/* cargar 10 fotos mas*/
+
 cargarMasRecetas.addEventListener("click", function () {
     CargarRecetas();
 });
@@ -41,7 +43,7 @@ function CargarRecetas() {
     productGrid.innerHTML = recetas;
     indiceRecetas += tamanoLote;
 
-    // Ocultar el botón si ya se cargaron todas las recetas
+
     if (indiceRecetas >= Recetas.length) {
         cargarMasRecetas.style.display = "none";
     }
@@ -53,7 +55,7 @@ fetch("https://dummyjson.com/recipes")
     })
     .then(function (data) {
         Recetas = data.recipes;
-        CargarRecetas(); // Cargar las primeras recetas
+        CargarRecetas(); 
     })
     .catch(function (error) {
         console.log("Mi error fue", error);
