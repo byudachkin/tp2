@@ -9,9 +9,9 @@
 <body>
     <header>
         <div class="img-container">
-        <img src="./imgs/Logos Verdulería y Frutería Simple Blanco y Negro.png" alt="logo">
+        <img src="./imgs/logo.png" alt="logo">
         </div>
-        <form>
+        <form method="get" action="login.html" class="formulario">
             <div class="form">
                 <input type="text" name="buscador" value="" placeholder="Buscador" class="campoBuscar">
                 <button type="submit">button</button>
@@ -29,10 +29,10 @@
     </header>
     <main class="ingresar">
         <h2>Ingresá</h2>
-        <form>
-            <input type="email" placeholder="Ingrese su email" required>
-            <input type="password" placeholder="Ingrese su contraseña" required>
-            <button type="submit" required> INGRESA </button>
+        <form method="get" action="login.html" class="formulario">
+            <input type="email" placeholder="Ingrese su email" class="email" value="">
+            <input type="password" placeholder="Ingrese su contraseña" class="password" value="">
+            <button type="submit" > INGRESA </button>
             <a href="register.html">No tengo cuenta</a>
         </form>
     </main>
@@ -43,5 +43,6 @@
             <article> Bahia Yudachkin </article>
         </div>
     </footer>
+    <script src="./js/login.js" ></script>  
 </body>
 </html>
