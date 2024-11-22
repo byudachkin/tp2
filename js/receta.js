@@ -17,6 +17,9 @@ fetch(`https://dummyjson.com/recipes/${recetaId}`)
         document.getElementById('recetaImagen').src = receta.image;
         document.getElementById('instrucciones').textContent = receta.instructions;
         document.getElementById('tiempococcion').textContent = `${receta.cookTimeMinutes} minutos`;
-        const categorias = document.getElementById('categorias');
-        /* falta agregar informacion de categorias */
+        document.getElementById('categorias').textContent = `${receta.tags}`;
+    
+          
+        
+       
     })
