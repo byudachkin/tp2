@@ -165,7 +165,7 @@ main h1{
 }
 
 .ingresar button{
-    background-color: rgb(240, 234, 234);
+    background-color: 20px;
     color: black;
     text-transform: uppercase;
     border: 1px solid black;
@@ -177,3 +177,69 @@ a {
     color: black;
     margin-bottom: 30px;
 }
+
+
+/* receta html */
+
+#recetaNombre{
+    font-family: "Geist Mono", monospace;
+    font-optical-sizing: auto;
+    font-family: "Geist Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-align: center;
+    padding-top: 30px;
+}
+
+#recetaImagen{
+    width: 40%;
+    
+}
+
+.foto{
+    display: flex;
+    justify-content: center;
+}
+
+main section h2{
+    font-family: "Geist Mono", monospace;
+    font-optical-sizing: auto;
+    font-family: "Geist Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-align: center;
+    padding-top: 30px;
+    background-color: rgb(234, 216, 216);
+    padding-bottom: 20px;
+}
+
+#instrucciones{
+    font-family: "Geist Mono", monospace;
+    font-optical-sizing: auto;
+    font-family: "Geist Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-align: center;
+    padding-top: 30px;
+}
+
+#tiempococcion{
+    font-family: "Geist Mono", monospace;
+    font-optical-sizing: auto;
+    font-family: "Geist Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-align: center;
+    padding-top: 30px;
+}
+
+#categorias{
+    font-family: "Geist Mono", monospace;
+    font-optical-sizing: auto;
+    font-family: "Geist Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-align: center;
+    padding-top: 30px;
+}
+
