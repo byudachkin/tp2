@@ -25,6 +25,7 @@ formulario.addEventListener("submit", function (event) {
 /* cargar 10 fotos mas*/
 
 cargarMasRecetas.addEventListener("click", function () {
+    index ++;
     CargarRecetas(index);
 });
 
