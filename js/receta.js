@@ -18,7 +18,13 @@ fetch(`https://dummyjson.com/recipes/${recetaId}`)
         document.getElementById('tiempococcion').textContent = `${receta.cookTimeMinutes} minutos`;
         document.getElementById('categorias').textContent = `${receta.tags}`;
         
-          
+        let tags = '';
+        for (let i = 0; i < receta.tags.length; i++){
+            tags += `
+            <li><a href='category.html?tag=${receta.tags[i]}'>${receta.tags[i]}</a></li>`
+
+        }  
+        document.getElementById('categorias').innerHTML = tags;
         
        
     })
