@@ -1,16 +1,16 @@
 fetch('https://dummyjson.com/recipes/tags')
-.then(function(response){
-    return response.json();
-})
-.then(function(data){
-    let categorias = document.querySelector(".categorias");
-
-    lista= "";
-    for (let i = 0; i < data.lenght; i++) {
-        lista += `<li><a href="category.html?tag=${data[i]}">${data[i]}</a></li>`
-    }
-    categorias.innerHTML = lista;
-})
-.catch(function(error){
-    console.log(error);
-})
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(data) {
+        let categorias = document.querySelector(".categorias");
+        
+        lista = "";
+        for (let i = 0; i < data.length; i++) {
+            lista += `<li><a href="category.html?tag=${data[i]}">${data[i]}</a></li>`
+        }
+        categorias.innerHTML = lista;
+    })
+    .catch(function(error) {
+        console.log(error);
+    })
