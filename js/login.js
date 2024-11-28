@@ -1,25 +1,20 @@
-const formulario = document.querySelector(".formulario")
-const email = document.querySelector(".email")
-const password = document.querySelector(".password")
-console.log("el value es " + email.value)
 
+const formulario = document.querySelector(".ingresar");
 
-formulario.addEventListener("submit", function (e) {
-    e.preventDefault();
-    let errores = false;
+formulario.addEventListener("submit", function (event) {
+  event.preventDefault();
 
-    if(email.value === '') {
-        alert("Por favor completa el email");
-        errores = true;
- 
-    }
+  let email = document.querySelector(".email").value.trim();
+  let contraseña = document.querySelector(".password").value.trim();
 
-    if(password.value === ''){
-        errores = true;
-        alert("Por favor completa la contraseña");
-    }
-
-    if(!errores){
-        formulario.submit();
-    }
+  if (email === "") {
+    alert("Por favor complete el campo email"); 
+    return;  
+  }
+  if (contraseña === "") {
+    alert("Por favor complete el campo contraseña"); 
+    return; 
+  }
+  window.location.href = "./index.html"; 
 });
+
