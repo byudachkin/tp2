@@ -1,4 +1,4 @@
-/* validacion del buscador del header */
+
 
 const formulario = document.querySelector("form");
 const campoBuscar = document.querySelector(".campoBuscar");
@@ -22,7 +22,7 @@ formulario.addEventListener("submit", function (event) {
     }
 });
 
-/* cargar 10 fotos mas*/
+
 
 cargarMasRecetas.addEventListener("click", function () {
     index ++;
