@@ -1,28 +1,18 @@
-const formulario = document.querySelector(".formulario");
-const email = document.querySelector(".email");
-const password = document.querySelector(".password");
-console.log("el value es " + email.value);
+const formulario = document.querySelector(".ingresar");
 
-formulario.addEventListener("submit", function (e) {
-    e.preventDefault();
-    let errores = false;
+formulario.addEventListener("submit", function (event) {
+  event.preventDefault();
 
- 
-    function esSoloEspacios(cadena) {
-        for (let i = 0; i < cadena.length; i++) {
-            if (cadena[i] !== ' ') {
-                return false; 
-            }
-        }
-        return true; 
-    }
-    if(email.value == '' || esSoloEspacios(email.value)) {
-        alert("Por favor completa el email correctamente");
-        errores = true;
-    }else if(password.value == '' || esSoloEspacios(password.value)){
-    errores = true;
-    alert("Por favor completa la contraseña correctamente");
-    }if(!errores){
-    formulario.submit();
-    }
+  let email = document.querySelector(".email").value;
+  let contraseña = document.querySelector(".password").value;
+
+  if (email === "") {
+    alert("Por favor complete el campo email"); 
+    return;  
+  }
+  if (contraseña === "") {
+    alert("Por favor complete el campo contraseña"); 
+    return; 
+  }
+  window.location.href = "./index.html";
 });

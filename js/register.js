@@ -1,11 +1,11 @@
-const form = document.querySelector("form")
+const form = document.querySelector(".formulario_registro")
 
-const mail = document.getElementById("email")
-const pass = document.getElementById("password")
+const mail = document.querySelector(".email")
+const pass = document.querySelector(".password")
 
 const emailError = document.querySelector(".error_email");
 const passError = document.querySelector(".error_pass");
-console.log("el value es " + mail.value)
+
 
 form.addEventListener("submit", function (e) {
     e.preventDefault();
@@ -15,21 +15,16 @@ form.addEventListener("submit", function (e) {
         emailError.innerText = "Por favor completa el email";
         emailError.style.display = "block";
         errores = true;
- 
-    } else {
-        emailError.style.display = "none";
-    }
+        console.log("el value es " + mail.value)
+    } 
 
     if(pass.value === ''){
         passError.innerText = "Por favor completa la contraseña";
         passError.style.display = "block";
         errores = true;
-
-    } else {
-        passError.style.display = "none";
     }
 
-    if(!errores){
+    if(errores === false){
         form.submit();
     }
 });
