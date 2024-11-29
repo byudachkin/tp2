@@ -333,3 +333,12 @@ main section h2{
     margin-bottom: 20px;
     background-color: rgb(240, 234, 234);
 }
+
+@media (max-width: 420px){
+    .section article{
+        width: 60%;
+    }
+    .section article img{
+        width: 70%;
+    }
+}
