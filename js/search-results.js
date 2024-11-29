@@ -20,8 +20,8 @@ fetch(`https://dummyjson.com/recipes/search?q=${searchQuery}`)
             <img class="imagen" src="${data.recipes[i].image}" alt = "${data.recipes[i].name}">
             <p class"parrafo" > ${data.recipes[i].name} </p>
             <p class "parrafo"> Name: ${data.recipes[i].difficulty} </p> 
-
-            </a>
+            <a href="receta.html?id=${data.recipes[i].id}">ir a receta</a>
+        
         </article>`
     
 
@@ -29,6 +29,8 @@ fetch(`https://dummyjson.com/recipes/search?q=${searchQuery}`)
     
        
         search.innerHTML = htmlcontent;
+        
+       
 
         }})
     

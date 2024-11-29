@@ -16,3 +16,19 @@ formulario.addEventListener("submit", function (event) {
   }
   window.location.href = "./index.html";
 });
+
+
+
+const campoBuscar = document.querySelector(".campoBuscar");
+const errorbuscar = document.querySelector(".errordescript");
+
+formulario.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    if (campoBuscar.value == "" || campoBuscar.value.length <= 3) {
+        errorbuscar.style.display = "block";
+        errorbuscar.innerText = "Por favor buscar algo";
+    } else {
+        this.submit();
+    }
+});
