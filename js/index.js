@@ -14,7 +14,7 @@ let index = 1;
 formulario.addEventListener("submit", function (event) {
     event.preventDefault();
 
-    if (campoBuscar.value === "" || campoBuscar.value.length <= 3) {
+    if (campoBuscar.value == "" || campoBuscar.value.length <= 3) {
         errorbuscar.style.display = "block";
         errorbuscar.innerText = "Por favor buscar algo";
     } else {

@@ -16,19 +16,13 @@ formulario.addEventListener("submit", function (e) {
         }
         return true; 
     }
-
-
-    if(email.value === '' || esSoloEspacios(email.value)) {
+    if(email.value == '' || esSoloEspacios(email.value)) {
         alert("Por favor completa el email correctamente");
         errores = true;
-    }
-
-  if(password.value === '' || esSoloEspacios(password.value)){
+    }else if(password.value == '' || esSoloEspacios(password.value)){
     errores = true;
     alert("Por favor completa la contraseña correctamente");
-}
-
-if(!errores){
+    }if(!errores){
     formulario.submit();
     }
 });
